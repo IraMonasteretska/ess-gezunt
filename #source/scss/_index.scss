@@ -1,5 +1,5 @@
 .herosection {
-    padding: 50px 0 0 0;
+    padding: 50px 0 30px 0;
     min-height: calc(100vh - 229px);
     background-color: #f7f0e9;
     position: relative;
@@ -20,6 +20,7 @@
 }
 
 .herosection__logo {
+    width: 100%;
     max-width: 600px;
     display: block;
     margin: 0 auto 30px;
@@ -56,3 +57,68 @@
     }
 
 }
+
+@media(max-width:1600.8px) {
+
+    .herosection__logo {
+        max-width: 440px;
+    }
+
+    .herosection__product p {
+        margin-bottom: 10px;
+    }
+
+    .herosection {
+        min-height: calc(100vh - 201px);
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .herosection {
+        min-height: calc(100vh - 80px);
+    }
+
+    .herosection__products {
+        max-width: 460px;
+
+        .col-lg-4 {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .herosection__product p {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .herosection__logo {
+        max-width: 300px;
+    }
+
+    .herosection {
+        min-height: calc(100vh - 70px);
+        padding: 30px 0 20px;
+    }
+
+    .herosection__product .imgwrap {
+        height: 200px;
+    }
+
+    .herosection__products {
+        max-width: 300px;
+    }
+
+    .herosection__product p {
+        font-size: 16px;
+    }
+
+
+}
+
+

@@ -1,7 +1,11 @@
 $base-green: #11562C;
 $base-pink: #E0ADAD;
 
-
+@media(min-width:1400px) {
+    .container {
+        max-width: 1200px;
+    }
+}
 
 body {
     font-family: "Open Sans", sans-serif;

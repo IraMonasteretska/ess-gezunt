@@ -1,0 +1,167 @@
+.aboutsect {
+    padding: 45px 0 30px;
+}
+
+.pagetitle {
+    text-align: right;
+    color: $base-green;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+
+.aboutsect {
+    h1 {
+        color: $base-green;
+        font-weight: 400;
+        font-family: "Montserrat", sans-serif;
+        font-size: 42px;
+        margin-bottom: 50px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.abgreen {
+    padding: 30px 0;
+    background: #78a18a;
+}
+
+.abgreen__imgbg {
+    padding: 145px 150px;
+    position: relative;
+
+    .textwrap {
+        position: relative;
+        z-index: 2;
+
+        p {
+            max-width: 750px;
+            margin: 0 auto;
+            color: #fff;
+            text-align: center;
+            font-size: 20px;
+
+            span {
+                display: block;
+                font-size: 30px;
+                font-family: "Montserrat", sans-serif;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    h2 {
+        max-width: 800px;
+        margin: 0 auto;
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+.abgreen__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    opacity: 0.4;
+}
+
+@media(max-width:1600.8px) {
+    .aboutsect h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .aboutsect {
+        padding: 30px 0;
+    }
+
+    .abgreen__imgbg h2 {
+        max-width: 900px;
+    }
+
+    .abgreen__imgbg .textwrap p {
+        font-size: 18px;
+
+        span {
+            font-size: 28px;
+        }
+    }
+}
+
+@media(max-width:1199.8px) {
+    .aboutsect h1 {
+        font-size: 32px;
+    }
+
+    .abgreen__imgbg h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .abgreen__imgbg .textwrap p {
+        font-size: 16px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .abgreen__imgbg {
+        padding: 100px 60px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .pagetitle {
+        font-size: 15px;
+    }
+
+    .aboutsect h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .aboutsect .imgwrap {
+        position: relative;
+        height: 200px;
+        width: 100%;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    .abgreen__imgbg {
+        padding: 50px 20px;
+    }
+
+    .abgreen__imgbg h2 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .abgreen__imgbg .textwrap p {
+        span {
+            font-weight: 500;
+        }
+    }
+}

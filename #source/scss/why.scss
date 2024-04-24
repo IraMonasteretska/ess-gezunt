@@ -1,0 +1,46 @@
+.whysection {
+    padding: 40px 0;
+    background: #f7f0e9;
+
+    .title {
+        text-align: center;
+        color: $base-green;
+        padding-bottom: 30px;
+        border-bottom: 2px solid $base-green;
+        font-size: 42px;
+        font-family: "Montserrat", sans-serif;
+        text-transform: capitalize;
+    }
+}
+
+
+.whysection__descr {
+    border-bottom: 2px solid $base-green;
+    padding-bottom: 10px;
+
+    h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+        color: $base-green;
+        font-weight: 400;
+        letter-spacing: 5px;
+        margin-top: 20px;
+    }
+
+    p {
+        color: $base-green;
+        font-size: 20px;
+        max-width: 500px;
+        font-weight: 600;
+    }
+}
+
+.whysection__descr-img {
+    text-align: center;
+
+    img {
+        max-width: 100%;
+        max-width: 430px;
+        width: 100%;
+    }
+}

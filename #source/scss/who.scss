@@ -1,0 +1,119 @@
+.whosect {
+    background-color: #afc7b9;
+    padding: 40px 0;
+    min-height: calc(100vh - 230px);
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        right: 0;
+        width: 900px;
+        height: calc(100% - 80px);
+        background: url('../img/whoimg.jpg') no-repeat center / cover;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        opacity: 0.3;
+    }
+}
+
+.whosect__description {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    height: calc(100vh - 350px);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 20px;
+        font-size: 48px;
+    }
+
+    p {
+        color: #fff;
+        font-size: 20px;
+    }
+}
+
+@media(max-width:1600.8px) {
+    .whosect {
+        padding: 40px 0;
+        min-height: calc(100vh - 201px);
+    }
+}
+
+@media(max-width:991.8px) {
+    .whosect {
+        min-height: calc(100vh - 80px);
+    }
+
+    .whosect:after {
+        width: 600px;
+    }
+
+    .whosect__description h1 {
+        font-size: 56px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .whosect:after {
+        width: 500px;
+    }
+
+    .whosect__description h1 {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+
+    .whosect__description {
+        max-width: 450px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .whosect {
+        min-height: calc(100vh - 70px);
+        padding: 30px 0;
+    }
+
+    .whosect:after {
+        width: calC(100% - 30px);
+        height: calc(100% - 60px);
+        top: 30px;
+    }
+
+    .whosect__description h1 {
+        font-size: 36px;
+    }
+
+    .whosect__description p {
+        margin: 0 auto;
+        max-width: calc(100% - 30px);
+        font-size: 18px;
+    }
+
+
+
+}
+
+@media(max-height:580px) {
+    .whosect {
+        min-height: initial;
+    }
+
+    .whosect__description {
+        min-height: 400px;
+    }
+}

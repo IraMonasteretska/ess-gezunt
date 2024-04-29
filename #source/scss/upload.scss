@@ -1,0 +1,90 @@
+.uploadsect {
+    padding: 100px 0;
+}
+
+.uploadbox {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+    img {
+        max-width: 100%;
+        margin-top: 50px;
+    }
+}
+
+.titlebox {
+    p {
+        color: $base-green;
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+
+    .title {
+        color: $base-green;
+        font-size: 56px;
+        font-family: "Montserrat", sans-serif;
+        line-height: 120%;
+    }
+}
+
+.descr {
+    color: $base-green;
+    font-size: 16px;
+    padding-top: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+@media(max-width:1440.8px) {
+    .uploadsect {
+        padding: 70px 0;
+    }
+
+    .titlebox .title {
+        font-size: 50px;
+    }
+
+    .uploadbox img {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .descr {
+        padding-top: 20px;
+    }
+
+    .uploadbox {
+        margin-bottom: 50px;
+    }
+
+    .uploadbox img {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .uploadsect {
+        padding: 40px 0 0 0;
+    }
+
+    .titlebox p {
+        font-size: 21px;
+    }
+
+    .titlebox .title {
+        font-size: 36px;
+    }
+
+    .descr {
+        padding-top: 10px;
+    }
+
+    .uploadbox img {
+        margin-top: 0;
+    }
+
+
+}

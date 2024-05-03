@@ -28,7 +28,7 @@
     }
 }
 
-.descr {
+.uploadbox .descr {
     color: $base-green;
     font-size: 16px;
     padding-top: 50px;
@@ -51,7 +51,7 @@
 }
 
 @media(max-width:991.8px) {
-    .descr {
+    .uploadbox .descr {
         padding-top: 20px;
     }
 
@@ -78,7 +78,7 @@
         font-size: 36px;
     }
 
-    .descr {
+    .uploadbox .descr {
         padding-top: 10px;
     }
 

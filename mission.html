@@ -6,49 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Ess Gezunt</title>
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header class="header">
+    <header class="header header-ess">
         <div class="container">
             <a href="#" class="header__logo"><img src="img/logomark.svg" alt="logo"></a>
+            <div class="row align-items-center">
+                <div class="col-xl-7 col-lg-8 col-md-8 col-4">
+                    <div class="header__leftsect">
+                        <div class="header__searchbox">
+                            <select class="customselect" name="state">
+                                <option value="0">Products</option>
+                                <option value="1">Products And Discussions</option>
+                            </select>
 
-            <nav>
-                <ul class="header__menu">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">About</a></li>
-                    <li>
-                        <a href="#">Why</a>
-                        <ul>
-                            <li><a href="#">How</a></li>
-                            <li><a href="#">Who</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Categories</a>
-                        <ul>
-                            <li><a href="#">Dairy Free</a></li>
-                            <li><a href="#">Sugar Free</a></li>
-                            <li><a href="#">Gluten Free</a></li>
-                            <li><a href="#">Fat Free</a></li>
-                            <li><a href="#">Low Sodium</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Mission</a></li>
-                    <li>
-                        <a href="#">Upload</a>
-                        <ul>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Recipes</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <button class="header__closemenu">
-                    <img src="img/close.png" alt="menu">
-                </button>
-            </nav>
+                            <div class="searchinputfield">
+                                <input type="text" placeholder="Search on Food...">
+                                <button>
+                                    <img src="img/header/search-icon.svg" alt="search">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-4 col-md-3 col-8">
+                    <div class="header__rightsect">
+                        <div class="mobsearchbtn">
+                            <button><img src="img/header/search-icon.svg" alt="search"></button>
+                        </div>
+                        <div class="headeraccwrap">
+                            <div class="header__account">
+                                <div class="imgwrap">
+                                    <img src="img/header/user-icon.png" alt="">
+                                </div>
+                                <div class="ddtext">
+                                    <p class="subtext">Sign In</p>
+                                    <p class="ddtitle">Account</p>
+                                </div>
+                            </div>
+                            <div class="header__accdropdown">
+                                <a href="#" class="greenbtn">Login</a>
+                                <p>New customer?</p>
+                                <a href="#" class="bordergreenbtn">register as a seller</a>
+                                <a href="#" class="bordergreenbtn">register as a wholesaler</a>
+                            </div>
+                        </div>
+                        <div class="headercartwrap">
+                            <div class="header__cart">
+                                <div class="cartimg">
+                                    <img src="img/header/cart-icon.png" alt="cart">
+                                    <div class="prodcount">0</div>
+                                </div>
+                                <p class="header__cartprice">$ 15.77</p>
+                            </div>
+                            <div class="header__cartdropdown">
+                                <div class="titleblock">
+                                    <p>The product has been added to the cart</p>
+                                    <button class="closecart"><img src="img/header/close.svg" alt="close"></button>
+                                </div>
+                                <div class="header__cartbody">
+                                    <div class="header__cartrow">
+                                        <div class="header__cartimg">
+                                            <img src="img/header/headercartimg.png" alt="product">
+                                        </div>
+                                        <div class="header__cartdescr">
+                                            <p>
+                                                Light - With low carbohydrates - Fruit Carb Fitness SyrupMax...
+                                            </p>
+                                            <div class="header__cartcounter">
+                                                <p>
+                                                    Number of pieces:
+                                                </p>
+                                                <div class="number">
+                                                    <span class="minus"><img src="img/header/minus.svg"
+                                                            alt="minus"></span>
+                                                    <input type="text" value="1" />
+                                                    <span class="plus"><img src="img/header/plus.svg"
+                                                            alt="minus"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__cartprice">
+                                            <p class="price">$ 15.77</p>
+                                            <p class="oldprice">$ 25.12</p>
+                                        </div>
+                                        <div class="header__cartdelete">
+                                            <button class="deleterow"><img src="img/header/delete-icon.svg"
+                                                    alt="delete"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__cartfooter">
+                                    <p>everything: <span>$ 15.77</span></p>
+                                    <a href="#">To order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__wrapperess">
+                <nav>
+                    <ul class="header__menu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">About</a></li>
+                        <li>
+                            <a href="#" class="sublink">Why</a>
+                            <ul>
+                                <li><a href="#">How</a></li>
+                                <li><a href="#">Who</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="sublink">Categories</a>
+                            <ul>
+                                <li><a href="#">Dairy Free</a></li>
+                                <li><a href="#">Sugar Free</a></li>
+                                <li><a href="#">Gluten Free</a></li>
+                                <li><a href="#">Fat Free</a></li>
+                                <li><a href="#">Low Sodium</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Mission</a></li>
+                        <li>
+                            <a href="#" class="sublink">Upload</a>
+                            <ul>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Recipes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="header__closemenu">
+                        <img src="img/close.png" alt="menu">
+                    </button>
+                </nav>
+            </div>
+
 
             <button class="header__menubtn">
                 <img src="img/menu.png" alt="menu">
@@ -80,6 +177,7 @@
 
 
     <script src="js/lib/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

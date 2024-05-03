@@ -1,5 +1,6 @@
 $base-green: #11562C;
 $base-pink: #E0ADAD;
+$white: #fff;
 
 @media(min-width:1400px) {
     .container {
@@ -14,4 +15,59 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.greenbtn {
+    width: 100%;
+    border-radius: 30px;
+    background: #158466;
+    min-height: 38px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 140%;
+    font-size: 13px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.bordergreenbtn {
+    width: 100%;
+    border-radius: 30px;
+    background: #fff;
+    border: 1px solid #158466;
+    min-height: 38px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    color: #158466;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 140%;
+    font-size: 13px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+input {
+    outline: none;
 }

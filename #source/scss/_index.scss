@@ -58,6 +58,215 @@
 
 }
 
+// import section from food 
+.mainslidersect {
+    padding: 60px 0 0 0;
+
+    .container {
+        position: relative;
+    }
+
+    .mainslider__slide {
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: hidden;
+        border-radius: 25px;
+        position: relative;
+
+        .row {
+            width: 100%;
+        }
+
+        &>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+            position: absolute;
+        }
+
+        .slideinfo {
+            position: relative;
+            z-index: 2;
+
+            .mainslider__slidetitle {
+                font-family: 'Poetsenone';
+                color: $white;
+                text-transform: uppercase;
+                line-height: 110%;
+                letter-spacing: 1.879px;
+                font-size: 62.67px;
+                margin: 0 0 26px 0;
+            }
+
+            .descr {
+                margin-bottom: 40px;
+                color: $white;
+                font-weight: 600;
+                line-height: 150%;
+                max-width: 480px;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 57px;
+                width: 240px;
+                border-radius: 40px;
+                border: 2px solid $white;
+                color: $white;
+                font-size: 16.597px;
+                font-weight: 700;
+                text-transform: capitalize;
+                transition: 0.3s;
+
+                span {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    svg {
+                        margin-left: 10px;
+
+                        path {
+                            transition: 0.3s;
+                        }
+
+                    }
+                }
+
+                &:hover {
+                    background: $white;
+                    color: #13B086;
+
+                    svg {
+
+                        path {
+                            fill: #13B086;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mainslidersect .mainslider__slide {
+    background: rgb(19, 176, 134);
+}
+
+.swiper-button-next.custom,
+.swiper-button-prev.custom {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #D9DBDF;
+    border-radius: 50%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.swiper-button-next.custom {
+    right: -45px;
+}
+
+.swiper-button-prev.custom {
+    left: -45px;
+}
+
+.swiper-button-next.custom:after,
+.swiper-button-prev.custom:after {
+    font-size: 14px;
+    font-weight: 500;
+    color: #D9DBDF;
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+
+
+
+@media(max-width:1550.8px) {
+    .mainslidersect {
+        padding: 40px 0 0 0;
+    }
+
+    .mainslidersect .mainslider__slide {
+        height: 400px;
+    }
+
+    .mainslidersect .mainslider__slide .slideinfo .mainslider__slidetitle {
+        font-size: 56px;
+    }
+}
+
+@media(max-width:1300.8px) {
+    .swiper-button-next.custom {
+        right: -20px;
+    }
+
+    .swiper-button-prev.custom {
+        left: -20px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .swiper-button-next.custom {
+        right: 0;
+    }
+
+    .swiper-button-prev.custom {
+        left: 0;
+    }
+
+    .slideinfo {
+        padding-left: 30px;
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .mainslidersect .mainslider__slide {
+        height: 300px;
+    }
+
+    .mainslidersect .mainslider__slide .slideinfo .mainslider__slidetitle {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+
+    .mainslidersect .mainslider__slide .slideinfo .descr {
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .mainslidersect .mainslider__slide .slideinfo a {
+        width: 200px;
+        height: 50px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .mainslidersect .mainslider__slide>img {
+        object-position: 40% 50%;
+    }
+}
+
+@media(max-width:575.8px) {
+    .mainslidersect .mainslider__slide .slideinfo .mainslider__slidetitle {
+        font-size: 36px;
+    }
+}
+
+// ---------------------------------
+
+
 @media(max-width:1600.8px) {
 
     .herosection__logo {
@@ -120,5 +329,3 @@
 
 
 }
-
-

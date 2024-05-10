@@ -1,17 +1,21 @@
-$(document).ready(function () {
-    $('.header__menubtn').click(function () {
+$(document).ready(function(){
+    $('.header__menubtn').click(function(){
         $('.header.header nav').addClass('show');
     });
-    $('.header__closemenu').click(function () {
+    $('.header__closemenu').click(function(){
         $('.header.header nav').removeClass('show');
     });
-
-    if ($('.customselect').length) {
-        $('.customselect').select2({
-            minimumResultsForSearch: -1,
-            dropdownCssClass: "headerselectdropdown"
-        });
-    }
+    
+    // slider
+    if ($('.mainslider').length) {
+    var swiper = new Swiper(".mainslider", {
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next.custom.sl1",
+            prevEl: ".swiper-button-prev.custom.sl1",
+        },
+    });
+}
 
     // header acc dropdown
     $('.header__account').click(function () {
@@ -27,8 +31,8 @@ $(document).ready(function () {
         }
     });
 
-    // Header cart dropdown - show/hide
-    $('.header__cart').click(function () {
+     // Header cart dropdown - show/hide
+     $('.header__cart').click(function () {
         $('.header__cartdropdown').toggle();
     });
     $('.closecart').click(function () {
@@ -50,6 +54,7 @@ $(document).ready(function () {
         $input.change();
         return false;
     });
+
     $('.plus').click(function () {
         var $input = $(this).parent().find('input');
         $input.val(parseInt($input.val()) + 1);
@@ -57,25 +62,25 @@ $(document).ready(function () {
         return false;
     });
 
-    // mob search
-    $('.mobsearchbtn').click(function () {
-        $('.header__searchbox').toggleClass('show');
+    // select
+    if ($('.customselect').length) {
+        $('.customselect').select2({
+            minimumResultsForSearch: -1,
+            dropdownCssClass: "headerselectdropdown"
+        });
+    }
+
+    // search
+    $('.headersearchbtn span').click(function(){
+        $('.eggheadsearch').toggleClass('show');
     });
 
     $(document).click(function (event) {
         let $target = $(event.target);
-        if (!$target.closest('.mobsearchbtn').length && !$target.closest('.header__searchbox').length) {
-            $('.header__searchbox').removeClass('show');
+        if (!$target.closest('.eggheadsearch').length && !$target.closest('.headersearchbtn span').length) {
+            $('.eggheadsearch').removeClass('show');
         }
     });
 
-    // slider
-    var swiper = new Swiper(".mainslider", {
-        loop: true,
-        navigation: {
-            nextEl: ".swiper-button-next.custom.sl1",
-            prevEl: ".swiper-button-prev.custom.sl1",
-        },
-    });
 
 });

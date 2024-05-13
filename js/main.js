@@ -82,5 +82,137 @@ $(document).ready(function(){
         }
     });
 
+    // + MAIN SECTIONS
+     // product box - show +-
+     $('.addtocart').click(function () {
+        $(this).parent('.prodcount').addClass('show');
+
+    });
+
+    var swiper2 = new Swiper(".productsection-slider.ps1", {
+        slidesPerView: 4,
+        spaceBetween: 36,
+
+        navigation: {
+            nextEl: ".swiper-button-next.custom.sl2",
+            prevEl: ".swiper-button-prev.custom.sl2",
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            575: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            767: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            991: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1550: {
+                slidesPerView: 4,
+                spaceBetween: 36,
+            },
+        },
+    });
+
+    var swiper3 = new Swiper(".productsection-slider.ps2", {
+        slidesPerView: 4,
+        spaceBetween: 36,
+        navigation: {
+            nextEl: ".swiper-button-next.custom.sl3",
+            prevEl: ".swiper-button-prev.custom.sl3",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            575: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            767: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            991: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1550: {
+                slidesPerView: 4,
+                spaceBetween: 36,
+            },
+        },
+    });
+
+    var swiper4 = new Swiper(".recipes-slider", {
+        slidesPerView: 3,
+        spaceBetween: 35,
+        navigation: {
+            nextEl: ".swiper-button-next.custom.sl4",
+            prevEl: ".swiper-button-prev.custom.sl4",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            575: {
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+            },
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1550: {
+                slidesPerView: 3,
+                spaceBetween: 35,
+            },
+        },
+    });
+    
+    var swiper5 = new Swiper(".discuss-slider", {
+        slidesPerView: 3,
+        spaceBetween: 35,
+        navigation: {
+            nextEl: ".swiper-button-next.custom.sl5",
+            prevEl: ".swiper-button-prev.custom.sl5",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            575: {
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+            },
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1550: {
+                slidesPerView: 3,
+                spaceBetween: 35,
+            },
+        },
+    });
 
 });

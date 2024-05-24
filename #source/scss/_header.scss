@@ -7,7 +7,7 @@ $orange: #FF810D;
 header.header {
     border-top: 20px solid $base-green;
     border-bottom: 10px solid $base-pink;
-    background: #f7f0e9;
+    background: #fff;
 }
 
 .header__menu {
@@ -58,6 +58,7 @@ header.header {
         &>ul {
             list-style: none;
             padding: 0;
+            box-shadow: 0 4px 6px #3333333d;
 
             &>li {
                 margin-bottom: 5px;
@@ -609,7 +610,7 @@ header.header {
 
 .eggheadsearch {
     position: absolute;
-    background: #f7f0e9;
+    background: #fff;
     width: 100%;
     left: 0;
     padding: 20px;
@@ -763,10 +764,6 @@ header.header {
 @media(max-width:1600.8px) {
     .header__menu {
         padding: 15px 0;
-    }
-
-    header.header {
-        border-top: 15px solid #11562C;
     }
 
     .headerwrapper {

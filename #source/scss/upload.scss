@@ -5,7 +5,7 @@
 .uploadbox {
     max-width: 1000px;
     margin: 0 auto;
-    margin-bottom: 100px;
+    padding: 80px 0;
 
     img {
         max-width: 100%;
@@ -30,7 +30,7 @@
 
 .uploadbox .descr {
     color: $base-green;
-    font-size: 16px;
+    font-size: 20px;
     padding-top: 50px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -55,12 +55,12 @@
         padding-top: 20px;
     }
 
-    .uploadbox {
-        margin-bottom: 50px;
-    }
-
     .uploadbox img {
         margin-top: 15px;
+    }
+
+    .uploadbox {
+        padding: 40px 0 50px;
     }
 }
 
@@ -84,6 +84,14 @@
 
     .uploadbox img {
         margin-top: 0;
+    }
+
+    .uploadbox .descr {
+        font-size: 16px;
+    }
+
+    .uploadbox {
+        padding: 30px 0 30px;
     }
 
 

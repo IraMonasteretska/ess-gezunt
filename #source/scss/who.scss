@@ -3,24 +3,10 @@
     padding: 40px 0;
     min-height: calc(100vh - 230px);
     position: relative;
-
-    // &::after {
-    //     content: '';
-    //     display: block;
-    //     margin: 0 auto;
-    //     right: 0;
-    //     width: 900px;
-    //     height: calc(100% - 80px);
-    //     background: url('../img/whoimg.jpg') no-repeat center / cover;
-    //     position: absolute;
-    //     left: 0;
-    //     top: 40px;
-    //     opacity: 0.3;
-    // }
 }
 
 .whosect__description {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     text-align: center;
     height: calc(100vh - 350px);
@@ -36,7 +22,7 @@
         letter-spacing: 2px;
         font-family: "Montserrat", sans-serif;
         margin-bottom: 20px;
-        font-size: 48px;
+        font-size: 56px;
     }
 
     p {
@@ -46,7 +32,7 @@
 
     ul {
         color: #fff;
-        font-size: 20px;
+        font-size: 24px;
     }
 }
 

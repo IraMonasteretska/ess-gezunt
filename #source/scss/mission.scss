@@ -1,24 +1,10 @@
 .whosect.mission {
     background: #ffe6e5;
 
-    // &::after {
-    //     background: url(../img/mission.jpg) no-repeat center / cover;
-    //     content: '';
-    //     display: block;
-    //     margin: 0 auto;
-    //     right: 0;
-    //     width: 900px;
-    //     height: calc(100% - 80px);
-    //     position: absolute;
-    //     left: 0;
-    //     top: 40px;
-    //     opacity: 0.3;
-    // }
-
     .whosect__description {
         h1 {
             font-family: "Montserrat", sans-serif;
-            font-size: 44px;
+            font-size: 56px;
             color: $base-green;
             font-weight: 500;
         }
@@ -50,9 +36,7 @@
 
 @media(max-width:1600.8px) {
 
-    .whosect.mission .centerbox p {
-        font-size: 20px;
-    }
+  
 
 }
 
@@ -63,6 +47,10 @@
 
     .whosect.mission .centerbox p {
         font-size: 22px;
+    }
+
+    .whosect.mission .whosect__description h1 {
+        font-size: 52px;
     }
 }
 

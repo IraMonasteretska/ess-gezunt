@@ -30,23 +30,27 @@
 }
 
 .abgreen__imgbg {
-    padding: 145px 150px;
+    padding: 145px 160px;
     position: relative;
 
     .textwrap {
         position: relative;
         z-index: 2;
 
+        h2 {
+            font-size: 44px;
+        }
+
         p {
             max-width: 750px;
             margin: 0 auto;
             color: #fff;
             text-align: center;
-            font-size: 20px;
+            font-size: 22px;
 
             span {
                 display: block;
-                font-size: 30px;
+                font-size: 34px;
                 font-family: "Montserrat", sans-serif;
                 margin-top: 20px;
             }
@@ -90,13 +94,13 @@
         max-width: 900px;
     }
 
-    .abgreen__imgbg .textwrap p {
-        font-size: 18px;
+    // .abgreen__imgbg .textwrap p {
+    //     font-size: 18px;
 
-        span {
-            font-size: 28px;
-        }
-    }
+    //     span {
+    //         font-size: 28px;
+    //     }
+    // }
 }
 
 @media(max-width:1199.8px) {
@@ -115,6 +119,10 @@
         span {
             font-size: 20px;
         }
+    }
+
+    .abgreen__imgbg .textwrap h2 {
+        font-size: 32px;
     }
 
 }
@@ -163,4 +171,9 @@
             font-weight: 500;
         }
     }
+
+    .abgreen__imgbg .textwrap h2 {
+        font-size: 28px;
+    }
+
 }

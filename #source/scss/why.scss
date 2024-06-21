@@ -85,12 +85,12 @@
 }
 
 .twocolsect__descrwrap {
-    max-width: 490px;
-    padding-left: 80px;
     p {
         color: $base-green;
-        font-size: 18px;
-        max-width: 350px;
+        font-size: 32px;
+        max-width: 700px;
+        text-align: center;
+        margin: 0 auto;
 
         &:last-child {
             margin-bottom: 0;
@@ -103,8 +103,9 @@
         font-family: "Montserrat", sans-serif;
         line-height: 120%;
         letter-spacing: 2px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         max-width: 100%;
+        text-align: center;
     }
 }
 
@@ -128,12 +129,17 @@
     }
 
     .whyp.twocolsect {
-        padding: 60px 0 40px;
+        padding: 60px 0 80px;
     }
 
     .twocolsect__descrwrap .title {
         font-size: 46px;
     }
+
+    .twocolsect__descrwrap p {
+        font-size: 26px;
+    }
+
 }
 
 @media(max-width:991.8px) {
@@ -221,10 +227,13 @@
 
     .twocolsect__descrwrap .title {
         font-size: 36px;
+        margin-bottom: 30px;
     }
 
     .twocolsect__descrwrap p {
         font-size: 16px;
     }
+
+
 
 }

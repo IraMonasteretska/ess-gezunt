@@ -4,7 +4,7 @@
 
     h1 {
         color: #11562C;
-        font-size: 54px;
+        font-size: 60px;
         font-family: "Montserrat", sans-serif;
         line-height: 120%;
         letter-spacing: 2px;
@@ -12,6 +12,7 @@
         font-weight: 400;
         margin-bottom: 35px;
         margin-top: 50px;
+        text-align: center;
     }
 
     .imgwrap {
@@ -28,23 +29,29 @@
         }
     }
 
-    .descr {
-        padding: 10px 50px;
-
-        p {
-            font-family: "Montserrat", sans-serif;
-            margin: 0;
-            color: $base-green;
-            font-weight: 500;
-            line-height: 130%;
-            font-size: 15px;
-        }
-    }
+ 
 }
 
 .howsect__wrapper {
     max-width: 900px;
     margin: 0 auto;
+
+    .descr {
+        max-width: 600px;
+        margin: 0 auto 50px;
+        color: $base-green;
+        font-weight: 500;
+        line-height: 130%;
+        font-size: 24px;
+        text-align: center;
+      
+    }
+
+    p {
+        text-align: center;
+        font-size: 20px;
+        color: $base-green;
+    }
 }
 
 @media(max-width:1600.8px) {
@@ -54,7 +61,6 @@
     }
 
     .howsect h1 {
-        margin-top: 20px;
         font-size: 48px;
     }
 

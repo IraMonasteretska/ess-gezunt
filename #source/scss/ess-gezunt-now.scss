@@ -4,7 +4,7 @@
 
 .sgnowbox {
     max-width: 1000px;
-    margin: 0 auto 150px;
+    margin: 100px auto 50px;
 
     &:last-child {
         margin-bottom: 0;
@@ -40,10 +40,14 @@
             font-family: "Montserrat", sans-serif;
             font-weight: 500;
             padding-left: 50px;
-            margin: 0;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 24px;
         }
 
         .title {
+            max-width: 100%;
             padding-left: 60px;
             padding-right: 15px;
             font-size: 54px;
@@ -52,6 +56,9 @@
             font-family: "Montserrat", sans-serif;
             letter-spacing: 2px;
             font-weight: 400;
+            text-align: center;
+            margin-bottom: 40px;
+            margin-top: 80px;
         }
     }
 }

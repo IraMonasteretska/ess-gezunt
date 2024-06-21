@@ -1,9 +1,9 @@
 .herosection {
     padding: 50px 0 30px 0;
-    // min-height: calc(100vh - 229px);
     background-color: #fff;
     position: relative;
     border-bottom: 10px solid #11562C;
+    text-align: center;
 
     &::after {
         content: '';
@@ -18,9 +18,35 @@
         background-size: 40%;
         opacity: 0.2;
     }
+
+    p {
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        font-family: "Montserrat", sans-serif;
+        font-size: 36px;
+        font-family: "Open Sans", sans-serif;
+        padding-right: 40px;
+        color: #11562C;
+
+        span {
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid #11562C;
+            font-size: 14px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+        }
+    }
 }
-
-
 
 .herosection__logo {
     width: 100%;
@@ -229,10 +255,6 @@
     }
 }
 
-
-
-
-
 @media(max-width:1600.8px) {
 
     .herosection__logo {
@@ -242,10 +264,6 @@
     .herosection__product p {
         margin-bottom: 10px;
     }
-
-    // .herosection {
-    //     min-height: calc(100vh - 201px);
-    // }
 
     .mainslidersect {
         padding-top: 30px;
@@ -290,9 +308,6 @@
 }
 
 @media(max-width:991.8px) {
-    .herosection {
-        // min-height: calc(100vh - 80px);
-    }
 
     .herosection__products {
         max-width: 460px;
@@ -349,7 +364,6 @@
     }
 
     .herosection {
-        // min-height: calc(100vh - 70px);
         padding: 30px 0 20px;
     }
 
@@ -371,6 +385,17 @@
 
     .herosection {
         border-bottom: 5px solid #11562C;
+    }
+
+    .herosection p {
+        font-size: 22px;
+        padding-right: 30px;
+
+        span {
+            width: 24px;
+            height: 24px;
+            font-size: 10px;
+        }
     }
 
 }

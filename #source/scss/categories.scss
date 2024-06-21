@@ -38,13 +38,23 @@
 .twocolsect .twocolsect__categories {
     padding: 70px 0;
 
+    .twocolsect__descrwrap  {
+        padding-left: 40px;
+    }
+
     .twocolsect__descrwrap .title {
         font-size: 60px;
         font-weight: 400;
+        text-align: left;
+        margin-bottom: 40px;
     }
 
     .twocolsect__descrwrap p {
         font-weight: 500;
+        text-align: left;
+        font-size: 18px;
+        max-width: 400px;
+        margin: 0;
     }
 }
 
@@ -61,15 +71,32 @@
         text-align: center;
 
         img {
-            // width: 100%;
-            // height: 100%;
-            // opacity: 0.3;
-            // position: absolute;
-            // top: 0;
-            // left: 0;
-            // object-fit: cover;
-            // object-position: 50% 50%;
-            max-width: 100%;
+            max-width: 600px;
+        }
+
+        .logotext {
+            color: #11562C;
+            font-size: 32px;
+            font-weight: 500;
+            display: inline-block;
+            position: relative;
+            padding-right: 40px;
+            margin-top: 0;
+
+            span {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 1px solid #11562C;
+                font-size: 15px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
         }
 
         p {
@@ -82,6 +109,7 @@
             letter-spacing: 2px;
             margin: 0;
             line-height: 130%;
+            margin-top: 80px;
         }
 
     }
@@ -164,6 +192,10 @@
     .rdycat .infowrap p {
         font-size: 60px;
     }
+
+    .twocolsect .twocolsect__categories .twocolsect__descrwrap {
+        padding-left: 0;
+    }
 }
 
 @media(max-width:575.8px) {
@@ -197,7 +229,24 @@
         }
     }
 
+    .rdycat .infowrap .logotext {
+        font-size: 20px;
+        margin-top: 10px;
+        padding-right: 30px;
 
+        span {
+            width: 24px;
+            height: 24px;
+            font-size: 8px;
+            line-height: 1;
+            top: -5px;
+
+        }
+    }
+
+    .rdycat .infowrap p {
+        margin-top: 50px;
+    }
 
 }
 

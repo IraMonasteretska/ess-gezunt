@@ -1,0 +1,355 @@
+.pagesect {
+    padding: 90px 0 40px;
+    background: #f7f0e8;
+}
+
+.pagesect__wrapper {
+    max-width: 750px;
+    margin: 0 auto;
+
+    h1 {
+        text-align: center;
+        font-size: 60px;
+        color: #12562d;
+        font-weight: 400;
+        line-height: 110%;
+        font-family: 'Maricle';
+        margin-bottom: 40px;
+    }
+
+    .descr {
+        text-align: center;
+        font-size: 18px;
+        color: #12562d;
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+}
+
+.pagesect__title {
+    color: #12562d;
+    font-family: 'Maricle';
+    text-align: center;
+    font-size: 26px;
+    margin: 0;
+}
+
+.pagesect__table {
+    border: 4px solid #e1aead;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.pagesect__table-head {
+    padding: 15px 0;
+    border-bottom: 4px solid #e1aead;
+}
+
+.pagesect__table-body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: auto;
+
+    li {
+        width: 25%;
+        list-style: none;
+        border-right: 4px solid #e1aead;
+        padding: 30px 15px;
+        text-align: center;
+        font-size: 16px;
+        color: #12562d;
+        font-weight: 700;
+        line-height: 120%;
+        margin: 0;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+.pagesect__advertice {
+    .pagesect__title {
+        margin-bottom: 30px;
+    }
+}
+
+.pagesect__advertice-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.pagesect__advertice-item {
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #e1aead;
+    width: 20%;
+
+    p {
+        color: #fff;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 130%;
+    }
+
+    &:nth-child(3) {
+        width: 33%;
+    }
+}
+
+.pagesect__bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagesect__bottom-email {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 3px solid #12562d;
+
+    span {
+        display: block;
+        color: #e1aead;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 0px;
+    }
+
+    a {
+        display: block;
+        color: #12562d;
+        font-size: 20px;
+        font-weight: 700;
+        transition: .3s;
+        line-height: 120%;
+
+        &:hover {
+            opacity: .6;
+        }
+    }
+}
+
+.pagesect__bottom-logo {
+    width: 200px;
+
+    img {
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+.pagesect__twotable {
+    display: flex;
+    justify-content: space-between;
+
+    .pagesect__table {
+        width: 48%;
+    }
+
+    .pagesect__table-body {
+        display: block;
+
+        li {
+            padding: 15px 10px;
+            width: 100%;
+            border-right: none;
+            border-bottom: 4px solid #e1aead;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.pagesect__pricing {
+    margin-bottom: 60px;
+
+    .pagesect__title {
+        margin-bottom: 30px;
+    }
+}
+
+.pagesect__pricing-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pagesect__pricing-item {
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #e1aead;
+    width: 180px;
+    color: #fff;
+
+    p {
+        font-weight: 700;
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+
+    span {
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+
+//  ADAPTIVE --- 
+
+@media (max-width: 1199.8px) {
+    .pagesect__wrapper h1 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    .pagesect {
+        padding: 70px 0 40px;
+    }
+}
+
+@media (max-width: 767.8px) {
+    .pagesect__pricing-wrapper{
+        flex-wrap: wrap;
+        max-width: 320px;
+    }
+    .pagesect__twotable {
+        flex-wrap: wrap;
+        max-width: 320px;
+        margin: 0 auto;
+        .pagesect__table {
+            margin-bottom: 25px;
+        }
+    }
+    .pagesect__pricing-item{
+        width: 100%;
+        margin-bottom: 15px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .pagesect__twotable .pagesect__table {
+        width: 100%;
+    }
+
+    .pagesect__table-body li {
+        padding: 15px 5px;
+        font-size: 15px;
+    }
+
+
+
+    .pagesect__table-head {
+        padding: 10px 0;
+    }
+
+    .pagesect__wrapper .descr {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .pagesect__table {
+        margin-bottom: 40px;
+    }
+
+    .pagesect__advertice-wrapper {
+        margin-bottom: 70px;
+    }
+
+    .pagesect__bottom-logo {
+        width: 160px;
+    }
+
+    .pagesect__bottom-email {
+        padding: 5px 15px;
+        border: 2px solid #12562d;
+    }
+
+    .pagesect__advertice-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .pagesect__advertice-item {
+        margin-top: 20px;
+        width: 48%;
+    }
+
+    .pagesect__advertice .pagesect__title {
+        margin-bottom: 20px;
+    }
+
+    .pagesect__advertice-item:nth-child(3) {
+        width: 48%;
+    }
+}
+
+@media (max-width: 575.8px) {
+    .pagesect__twotable .pagesect__table-body li {
+        border-top: none;
+    }
+    .pagesect__twotable .pagesect__table-head {
+        border-bottom: 4px solid #e1aead;
+    }
+    .pagesect__table-body {
+        flex-wrap: wrap;
+
+        li {
+            width: 50%;
+            border-top: 4px solid #e1aead;
+
+            &:nth-child(2n) {
+                border-right: none;
+            }
+        }
+    }
+
+    .pagesect__wrapper h1 {
+        font-size: 36px;
+    }
+
+    .pagesect__table-head {
+        border-bottom: none;
+    }
+
+    .pagesect__advertice-item {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .pagesect {
+        padding: 50px 0 40px;
+    }
+
+    .pagesect__advertice-item:nth-child(3) {
+        width: 100%;
+    }
+
+    .pagesect__bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pagesect__bottom-logo {
+        width: 100%;
+        order: -1;
+        text-align: center;
+        margin-bottom: 30px;
+
+
+        img {
+            max-width: 200px;
+        }
+    }
+}

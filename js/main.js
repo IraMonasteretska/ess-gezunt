@@ -1,21 +1,21 @@
-$(document).ready(function(){
-    $('.header__menubtn').click(function(){
+$(document).ready(function () {
+    $('.header__menubtn').click(function () {
         $('.header.header nav').addClass('show');
     });
-    $('.header__closemenu').click(function(){
+    $('.header__closemenu').click(function () {
         $('.header.header nav').removeClass('show');
     });
-    
+
     // slider
     if ($('.mainslider').length) {
-    var swiper = new Swiper(".mainslider", {
-        loop: true,
-        navigation: {
-            nextEl: ".swiper-button-next.custom.sl1",
-            prevEl: ".swiper-button-prev.custom.sl1",
-        },
-    });
-}
+        var swiper = new Swiper(".mainslider", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next.custom.sl1",
+                prevEl: ".swiper-button-prev.custom.sl1",
+            },
+        });
+    }
 
     // header acc dropdown
     $('.header__account').click(function () {
@@ -31,8 +31,8 @@ $(document).ready(function(){
         }
     });
 
-     // Header cart dropdown - show/hide
-     $('.header__cart').click(function () {
+    // Header cart dropdown - show/hide
+    $('.header__cart').click(function () {
         $('.header__cartdropdown').toggle();
     });
     $('.closecart').click(function () {
@@ -71,7 +71,7 @@ $(document).ready(function(){
     }
 
     // search
-    $('.headersearchbtn span').click(function(){
+    $('.headersearchbtn span').click(function () {
         $('.eggheadsearch').toggleClass('show');
     });
 
@@ -83,8 +83,8 @@ $(document).ready(function(){
     });
 
     // + MAIN SECTIONS
-     // product box - show +-
-     $('.addtocart').click(function () {
+    // product box - show +-
+    $('.addtocart').click(function () {
         $(this).parent('.prodcount').addClass('show');
 
     });
@@ -183,7 +183,7 @@ $(document).ready(function(){
             },
         },
     });
-    
+
     var swiper5 = new Swiper(".discuss-slider", {
         slidesPerView: 3,
         spaceBetween: 35,
@@ -211,6 +211,39 @@ $(document).ready(function(){
             1550: {
                 slidesPerView: 3,
                 spaceBetween: 35,
+            },
+        },
+    });
+
+    // Main - hero slider
+    var swiper = new Swiper(".heroslider", {
+        
+        loop: true,
+        speed: 1200,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
+            575: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1400: {
+                slidesPerView: 4,
+                spaceBetween: 26,
             },
         },
     });

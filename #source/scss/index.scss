@@ -396,6 +396,32 @@
     }
 }
 
+.heroslide a {
+    align-items: center;
+}
+
+.viewallproducts_link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 5px 20px;
+    border-radius: 30px;
+    border: 1px solid #11562C;
+    color: #11562C;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin-bottom: 30px;
+    line-height: 1;
+
+    &:hover {
+        color: #fff;
+        background: #11562C;
+    }
+}
+
 @media(max-width:1600.8px) {
 
     .herosection__logo {
@@ -673,6 +699,14 @@
             height: 24px;
             font-size: 10px;
         }
+    }
+
+    .viewallproducts_link {
+        margin-top: 20px;
+    }
+
+    .productbox .productbox__descr .addtocart:after {
+        top: 2px !important;
     }
 
 }

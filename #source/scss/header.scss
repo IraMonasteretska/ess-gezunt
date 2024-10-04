@@ -5,7 +5,7 @@ $white: #fff;
 $orange: #FF810D;
 
 header.header {
-    border-top: 20px solid $base-green;
+    // border-top: 20px solid $base-green;
     border-bottom: 10px solid $base-pink;
     background: #fff;
 }
@@ -761,6 +761,8 @@ header.header {
     }
 }
 
+
+
 @media(max-width:1600.8px) {
     .header__menu {
         padding: 15px 0;
@@ -1062,7 +1064,7 @@ header.header {
 
 @media(max-width:575.8px) {
     header.header {
-        border-top: 10px solid #11562C;
+        // border-top: 10px solid #11562C;
         border-bottom: 5px solid #E0ADAD;
     }
 

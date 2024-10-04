@@ -422,6 +422,28 @@
     }
 }
 
+.striprow {
+    height: 35px;
+    background: #11562C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        margin: 0;
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+        text-transform: capitalize;
+    }
+
+    img {
+        width: 20px;
+        margin-right: 10px;
+        margin-top: -2px;
+    }
+}
+
 @media(max-width:1600.8px) {
 
     .herosection__logo {
